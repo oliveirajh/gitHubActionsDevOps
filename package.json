@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Tests running...\"",
     "build": "echo \"Build running...\"",
-    "deploy": "echo \"Deploying new build to cloud server...\""
+    "deploy": "echo \"Deploying new build to cloud server...\"",
+    "test-index": "jest index.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/FabricaDeSinapse/GitHub-Actions/issues"
   },
-  "homepage": "https://github.com/FabricaDeSinapse/GitHub-Actions#readme"
+  "homepage": "https://github.com/FabricaDeSinapse/GitHub-Actions#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
