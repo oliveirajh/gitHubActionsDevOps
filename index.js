@@ -1,10 +1,4 @@
-console.log("Hello, GitHub Actions");
+import { verificaMaioridade } from "./src/utils";
 
-function division(a, b) {
-    if (b === 0) {
-        throw new Error("Divisão por zero não é permitida");
-    }
-    return a / b;
-}
-
-module.exports.division = division;
+console.log(verificaMaioridade(19));
+console.log(verificaMaioridade(17));

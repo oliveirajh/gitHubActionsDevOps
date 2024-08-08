@@ -2,17 +2,17 @@
 const assert = require('assert');
 
 // Import the division function from the index.js file
-const division = require('./index.js').division;
+import { verificaMaioridade } from '../src/utils.js';
 
 // Test cases for the division function
-describe('division', () => {
-    it('deve retornar a divisão correta entre dois números', () => {
-        assert.strictEqual(division(10, 2), 5);
-        assert.strictEqual(division(15, 3), 5);
-        assert.strictEqual(division(8, 4), 2);
+describe('verificaMaioridade', () => {
+    it('deve retornar true se o usuário for maior de idade', () => {
+        assert.strictEqual(verificaMaioridade(19), true);
+        assert.strictEqual(verificaMaioridade(17), false);
+        assert.strictEqual(verificaMaioridade(18), true);
     });
 
-    it('deve disparar um erro ao dividir por zero', () => {
-        assert.throws(() => division(10, 0), Error);
+    it('deve disparar um erro ao dividir se a idade for menor que zero', () => {
+        assert.throws(() => verificaMaioridade(-1), Error);
     });
 });
