@@ -1,4 +1,4 @@
-const verificaMaioridade = require('./src/utils').verificaMaioridade;
+const utils = require('./src/utils');
 
-console.log(verificaMaioridade(19));
-console.log(verificaMaioridade(17));
+console.log(utils.verificaMaioridade(19));
+console.log(utils.verificaMaioridade(17));

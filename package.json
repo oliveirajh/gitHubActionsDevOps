@@ -9,7 +9,6 @@
     "deploy": "echo \"Deploying new build to cloud server...\"",
     "test-index": "jest index.test.js"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FabricaDeSinapse/GitHub-Actions.git"
