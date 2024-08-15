@@ -2,7 +2,7 @@
 const assert = require('assert');
 
 // Import the division function from the index.js file
-const verificaMaioridade = require('./src/utils').verificaMaioridade;
+const verificaMaioridade = require('./src/utils.js').verificaMaioridade;
 
 // Test cases for the division function
 describe('verificaMaioridade', () => {
