@@ -1,18 +1,11 @@
-// Import the assert module
-const assert = require('assert');
-
-// Import the division function from the index.js file
 import { verificaMaioridade } from './src/utils.js';
 
-// Test cases for the division function
-describe('verificaMaioridade', () => {
-    it('deve retornar true se o usuário for maior de idade', () => {
-        assert.strictEqual(verificaMaioridade(19), true);
-        assert.strictEqual(verificaMaioridade(17), false);
-        assert.strictEqual(verificaMaioridade(18), true);
-    });
+test('deve retornar true se o usuário for maior de idade', () => {
+    expect(verificaMaioridade(19)).toBe(true);
+    expect(verificaMaioridade(17)).toBe(false);
+    expect(verificaMaioridade(18)).toBe(true);
+});
 
-    it('deve disparar um erro ao dividir se a idade for menor que zero', () => {
-        assert.throws(() => verificaMaioridade(-1), Error);
-    });
+test('deve disparar um erro se a idade for menor que zero', () => {
+    expect(() => verificaMaioridade(-1)).toThrow(Error);
 });
